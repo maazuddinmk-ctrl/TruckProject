@@ -12,6 +12,34 @@
       padding: 0;
     }
 
+    .contact-text {
+  color: #dbeafe;
+  margin-bottom: 20px;
+}
+
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 22px 0 24px;
+}
+
+.contact-btn {
+  min-width: 170px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.contact-details {
+  margin-top: 10px;
+}
+
+.contact-details p {
+  color: #dbeafe;
+  margin-bottom: 8px;
+}
+
     html {
       scroll-behavior: smooth;
     }
@@ -472,34 +500,39 @@
 <section id="contact" class="fade-section">
   <div class="container">
     <div class="contact-box">
-
       <h3>Contact Us</h3>
 
-      <div class="hero-buttons">
-
-        <a href="tel:2762412245" class="btn btn-primary">
-          📞 Call (276) 241-2245
-        </a>
-
-        <a href="sms:2762412245" class="btn btn-secondary">
-          💬 Text Us a Photo
-        </a>
-
-        <a href="mailto:thatonemnm@gmail.com" class="btn btn-secondary">
-          ✉ Send Email
-        </a>
-
-      </div>
-
-      <p><strong>Service Area:</strong> To be decided</p>
-
-      <p style="margin-top:16px;">
-        Description or empty space
+      <p class="contact-text">
+        This can later become the real contact area once the business details are finalized.
       </p>
 
+      <div class="contact-actions">
+        <a href="tel:2762412245" class="btn btn-primary contact-btn">
+          📞 Call Now
+        </a>
+
+        <a href="sms:2762412245" class="btn btn-secondary contact-btn">
+          💬 Text Us
+        </a>
+
+        <a href="mailto:thatonemnm@gmail.com" class="btn btn-secondary contact-btn">
+          ✉ Send Email
+        </a>
+      </div>
+
+      <div class="contact-details">
+        <p><strong>Phone:</strong> (276) 241-2245</p>
+        <p><strong>Email:</strong> thatonemnm@gmail.com</p>
+        <p><strong>Service Area:</strong> To be decided</p>
+      </div>
+
+      <p style="margin-top: 16px;">
+        Description or empty space
+      </p>
     </div>
   </div>
 </section>
+
   <footer>
     <div class="container">
       Concept site 
