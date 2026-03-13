@@ -1,100 +1,292 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Junk Removal Service</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Truck Project | Junk Removal</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-<style>
-body{
-    font-family: Arial;
-    margin:0;
-}
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f7f7f7;
+      color: #222;
+    }
 
-header{
-    background:#222;
-    color:white;
-    padding:20px;
-    text-align:center;
-}
+    header {
+      background-color: #111827;
+      color: white;
+      padding: 20px 40px;
+    }
 
-.hero{
-    background:#f4f4f4;
-    padding:80px;
-    text-align:center;
-}
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
 
-button{
-    padding:12px 25px;
-    font-size:16px;
-    background:#2ecc71;
-    border:none;
-    color:white;
-    cursor:pointer;
-}
+    .nav h2 {
+      font-size: 1.6rem;
+    }
 
-section{
-    padding:40px;
-    text-align:center;
-}
+    .nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 0.95rem;
+    }
 
-.services{
-    background:#fafafa;
-}
+    .hero {
+      background: linear-gradient(to right, #111827, #1f2937);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
 
-footer{
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-</style>
+    .hero h1 {
+      font-size: 2.6rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #22c55e;
+      color: white;
+      text-decoration: none;
+      padding: 14px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+      margin: 8px;
+    }
+
+    .btn.secondary {
+      background-color: #2563eb;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .section-text {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 40px;
+      color: #555;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #111827;
+    }
+
+    .highlight {
+      background-color: #eafaf0;
+    }
+
+    .about,
+    .contact-box {
+      background-color: white;
+      border-radius: 14px;
+      padding: 30px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    }
+
+    .about p,
+    .contact-box p {
+      margin-bottom: 12px;
+      color: #444;
+    }
+
+    .pricing-note {
+      text-align: center;
+      margin-top: 25px;
+      color: #444;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #111827;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .nav a {
+        margin-left: 0;
+      }
+    }
+  </style>
 </head>
-
 <body>
+  <header>
+    <div class="container nav">
+      <h2>Truck Project</h2>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
 
-<header>
-<h2>Junk Removal Services</h2>
-</header>
+  <section class="hero">
+    <div class="container">
+      <h1>Fast, Affordable Junk Removal</h1>
+      <p>
+        We help remove furniture, trash, appliances, yard waste, and other unwanted items.
+        Simple scheduling, fair pricing, and reliable service.
+      </p>
+      <a href="#contact" class="btn">Get a Free Quote</a>
+      <a href="tel:8040000000" class="btn secondary">Call Now</a>
+    </div>
+  </section>
 
-<div class="hero">
-<h1>Fast & Affordable Junk Removal</h1>
-<p>We remove furniture, appliances, trash, and more.</p>
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-text">
+        Whether you need one item removed or a full cleanout, we make the process quick and easy.
+      </p>
 
-<button onclick="alert('Call: 804-000-0000')">
-Call Now
-</button>
-</div>
+      <div class="cards">
+        <div class="card">
+          <h3>Furniture Removal</h3>
+          <p>Couches, mattresses, tables, dressers, shelves, and more.</p>
+        </div>
 
-<section class="services">
-<h2>Our Services</h2>
+        <div class="card">
+          <h3>Appliance Pickup</h3>
+          <p>Washers, dryers, refrigerators, microwaves, and old household appliances.</p>
+        </div>
 
-<p>Furniture Removal</p>
-<p>Appliance Pickup</p>
-<p>Garage Cleanouts</p>
-<p>Yard Waste Removal</p>
+        <div class="card">
+          <h3>Garage & Room Cleanouts</h3>
+          <p>Clear out clutter from garages, bedrooms, storage rooms, and attics.</p>
+        </div>
 
-</section>
+        <div class="card">
+          <h3>Yard Waste Removal</h3>
+          <p>Branches, bags of leaves, old outdoor junk, and general cleanup hauling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section>
-<h2>About Us</h2>
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">Why Choose Us</h2>
+      <div class="about">
+        <p>We’re focused on making junk removal simple and stress-free.</p>
+        <p>✔ Quick response times</p>
+        <p>✔ Fair local pricing</p>
+        <p>✔ Friendly, reliable service</p>
+        <p>✔ Great for small moves, cleanouts, and random pickup jobs</p>
+      </div>
+    </div>
+  </section>
 
-<p>
-Local junk removal service helping people clear out unwanted items quickly
-and affordably.
-</p>
+  <section id="pricing">
+    <div class="container">
+      <h2 class="section-title">Simple Pricing</h2>
+      <p class="section-text">
+        Pricing depends on how much space your items take up and how heavy the load is.
+      </p>
 
-</section>
+      <div class="cards">
+        <div class="card highlight">
+          <h3>Small Pickup</h3>
+          <p>Good for a few items, bags, or small furniture pieces.</p>
+        </div>
 
-<section>
-<h2>Contact</h2>
+        <div class="card highlight">
+          <h3>Medium Load</h3>
+          <p>Ideal for room cleanouts, multiple furniture pieces, or mixed junk.</p>
+        </div>
 
-<p>Phone: 804-000-0000</p>
-<p>Email: Test@email.com</p>
+        <div class="card highlight">
+          <h3>Large Load</h3>
+          <p>Best for garage cleanouts, bulk pickup, or heavy hauling jobs.</p>
+        </div>
+      </div>
 
-</section>
+      <p class="pricing-note">Contact us for a free quote based on your job.</p>
+    </div>
+  </section>
 
-<footer>
-<p>© 2026 Junk Removal Services</p>
-</footer>
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="contact-box">
+        <p><strong>Phone:</strong> 804-000-0000</p>
+        <p><strong>Email:</strong> truckproject@email.com</p>
+        <p><strong>Service Area:</strong> Richmond, VA and nearby areas</p>
+        <p><strong>Best way to start:</strong> Call or text a picture of what needs to be removed.</p>
 
+        <p style="margin-top: 18px;">
+          <a href="tel:8040000000" class="btn">Call Now</a>
+          <a href="sms:8040000000" class="btn secondary">Text Us</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Truck Project. All rights reserved.</p>
+  </footer>
 </body>
 </html>
